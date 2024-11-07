@@ -3,28 +3,46 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = themeToggle.querySelector('i');
 
-    // Sprawdź zapisany motyw
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme) {
-        document.documentElement.setAttribute('data-theme', currentTheme);
-        updateIcon(currentTheme === 'dark');
+    // Funkcja do ustawienia motywu
+    function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+        updateIcon(theme === 'dark');
     }
 
-    themeToggle.addEventListener('click', () => {
-        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        
-        if (isDark) {
-            document.documentElement.removeAttribute('data-theme');
-            localStorage.setItem('theme', 'light');
-        } else {
-            document.documentElement.setAttribute('data-theme', 'dark');
-            localStorage.setItem('theme', 'dark');
-        }
-        
-        updateIcon(!isDark);
-    });
-
+    // Funkcja do aktualizacji ikony
     function updateIcon(isDark) {
         themeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
     }
+
+    // Sprawdzenie preferencji systemu
+    function checkSystemTheme() {
+        // Sprawdź preferencje systemowe
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        // Sprawdź czy jest już zapisany motyw w localStorage
+        const savedTheme = localStorage.getItem('theme');
+
+        if (savedTheme) {
+            // Użyj zapisanego motywu
+            setTheme(savedTheme);
+        } else {
+            // Użyj motywu systemowego
+            setTheme(prefersDarkScheme.matches ? 'dark' : 'light');
+        }
+    }
+
+    // Nasłuchiwanie zmian w preferencjach systemowych
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(checkSystemTheme);
+
+    // Obsługa kliknięcia przycisku zmiany motywu
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        setTheme(newTheme);
+    });
+
+    // Inicjalne sprawdzenie motywu
+    checkSystemTheme();
 });
