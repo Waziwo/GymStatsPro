@@ -1,24 +1,60 @@
-<!-- frontend/index.html -->
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gym Stats Pro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Gym Stats Pro</h1>
-    </header>
-    <main>
-        <h2>Dodaj wynik</h2>
-        <button id="addResult">Dodaj wynik</button>
-        
-        <h2>Wyniki</h2>
-        <div id="results"></div>
-    </main>
-    <script type="module" src="js/firebase.js"></script>
-    <script type="module" src="js/script.js"></script>
+    <div class="landing-page">
+        <header>
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-dumbbell"></i>
+                    <h1>Gym Stats Pro</h1>
+                </div>
+                <ul>
+                    <li><a href="#about">O nas</a></li>
+                    <li><a href="#features">Funkcje</a></li>
+                    <li><a href="dashboard.html" class="login-btn">Zaloguj się</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h1>Śledź swoje postępy na siłowni</h1>
+                <p>Zapisuj wyniki, analizuj postępy i osiągaj swoje cele treningowe</p>
+                <a href="dashboard.html" class="cta-button">Rozpocznij za darmo</a>
+            </section>
+
+            <section id="features" class="features">
+                <h2>Dlaczego Gym Stats Pro?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Śledzenie postępów</h3>
+                        <p>Monitoruj swoje wyniki i obserwuj rozwój</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Dostęp mobilny</h3>
+                        <p>Korzystaj z aplikacji na każdym urządzeniu</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-database"></i>
+                        <h3>Bezpieczne dane</h3>
+                        <p>Twoje wyniki są bezpiecznie przechowywane</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Gym Stats Pro. Wszystkie prawa zastrzeżone.</p>
+        </footer>
+    </div>
 </body>
 </html>
