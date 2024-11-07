@@ -1,5 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* Zmienne dla motywu jasnego */
+:root {
+    --primary-color: #3498db;
+    --background-color: #fff;
+    --text-color: #333;
+    --card-background: #fff;
+    --header-background: rgba(44, 62, 80, 0.95);
+    --feature-background: #f8f9fa;
+    --testimonial-background: #f8f9fa;
+}
 
+/* Zmienne dla motywu ciemnego */
+[data-theme="dark"] {
+    --primary-color: #2980b9;
+    --background-color: #1a1a1a;
+    --text-color: #fff;
+    --card-background: #2c2c2c;
+    --header-background: rgba(22, 30, 40, 0.95);
+    --feature-background: #2c2c2c;
+    --testimonial-background: #2c2c2c;
+}
+
+/* Style dla przycisku przełączania motywu */
+.theme-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--primary-color);
+}
+
+/* Zaktualizowane style z użyciem zmiennych */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+header {
+    background: var(--header-background);
+}
+
+.feature-card {
+    background: var(--card-background);
+    color: var(--text-color);
+}
+
+.testimonial-card {
+    background: var(--testimonial-background);
+    color: var(--text-color);
+}
+
+.features {
+    background: var(--feature-background);
+}
+
+.contact input,
+.contact textarea {
+    background: var(--card-background);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+}
+
+/* Dodaj transition dla płynnej zmiany motywu */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
 /* Reset i podstawowe style */
 * {
     margin: 0;
