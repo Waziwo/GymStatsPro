@@ -1,11 +1,15 @@
+/* variables.css */
 :root {
     --primary-color: #3498db;
+    --secondary-color: #2ecc71;
     --background-color: #fff;
     --text-color: #333;
     --card-background: #fff;
     --header-background: rgba(44, 62, 80, 0.95);
     --feature-background: #f8f9fa;
     --testimonial-background: #f8f9fa;
+    --border-radius: 10px; /* Zaokrąglenie */
+    --transition-speed: 0.3s; /* Czas przejścia */
 }
 
 [data-theme="dark"] {

@@ -1,6 +1,49 @@
+/* contact.css */
 .contact {
     padding: 6rem 2rem;
-    background: var(--feature-background);
 }
 
-/* Dalsze style sekcji kontaktowej */
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: var(--border-radius);
+    transition: border-color var(--transition-speed);
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: var(--primary-color);
+}
+
+form button {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background var(--transition-speed);
+    width: 100%;
+}
+
+form button:hover {
+    background: #2980b9;
+}

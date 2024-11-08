@@ -1,3 +1,4 @@
+/* features.css */
 .features {
     padding: 6rem 2rem;
     background: var(--feature-background);
@@ -9,4 +10,33 @@
     margin-bottom: 3rem;
 }
 
-/* Dalsze style sekcji funkcji */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-card h3 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.feature-card p {
+    color: #555;
+}

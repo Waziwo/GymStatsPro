@@ -1,6 +1,44 @@
+/* testimonials.css */
 .testimonials {
     padding: 6rem 2rem;
-    background: var(--card-background);
+    background: var(--testimonial-background);
 }
 
-/* Dalsze style sekcji opinii użytkowników */
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform var(--transition-speed);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card span {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+    color: var(--primary-color);
+}

@@ -1,0 +1,6 @@
+/* icons.css */
+.fas {
+    margin-right: 0.5rem; /* Odstęp między ikoną a tekstem */
+    font-size: 1.5rem; /* Powiększenie ikon */
+    color: var(--primary-color); /* Ustawienie koloru ikon */
+}

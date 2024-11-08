@@ -1,7 +1,58 @@
+/* responsive.css */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
     }
 
-    /* Dalsze style responsywne */
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links a {
+        margin: 0.5rem 0; /* Odstęp między linkami */
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr; /* Jedna kolumna na mniejszych ekranach */
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr; /* Jedna kolumna na mniejszych ekranach */
+    }
+
+    .contact form {
+        padding: 1rem; /* Mniejsze odstępy w formularzu */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem; /* Dalsze zmniejszenie rozmiaru nagłówka */
+    }
+
+    .hero p {
+        font-size: 0.9rem; /* Dalsze zmniejszenie rozmiaru tekstu */
+    }
+
+    .feature-card h3 {
+        font-size: 1.3rem; /* Dostosowanie rozmiaru nagłówka w kartach funkcji */
+    }
+
+    .testimonial-card p {
+        font-size: 0.9rem; /* Dostosowanie rozmiaru tekstu w opiniach */
+    }
+
+    form input,
+    form textarea {
+        font-size: 0.9rem; /* Dostosowanie rozmiaru tekstu w formularzu */
+    }
+
+    form button {
+        font-size: 1rem; /* Dostosowanie rozmiaru tekstu w przycisku */
+    }
 }
