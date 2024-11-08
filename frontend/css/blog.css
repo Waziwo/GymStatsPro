@@ -1,0 +1,22 @@
+.blog {
+    padding: 6rem 2rem;
+    background: var(--background-color);
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-card {
+    background: var(--card-background);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s;
+}
+
+.blog-card:hover {
+    transform: translateY(- 5px);
+}

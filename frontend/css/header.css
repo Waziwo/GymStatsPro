@@ -1,6 +1,6 @@
 header {
     background-color: var(--header-background);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     padding: 1rem 2rem;
 }
 
@@ -14,7 +14,7 @@ nav {
 
 .nav-links a {
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 700;
     margin: 0 1rem;
     transition: color var(--transition-speed);
 }
@@ -25,16 +25,16 @@ nav {
 
 .login-btn {
     background: var(--primary-color);
-    padding: 0.5rem 1.5rem;
+    padding: 10px 20px;
     border-radius: var(--border-radius);
     border: none;
     color: white;
     cursor: pointer;
-    transition: background var(--transition-speed);
+    transition: background 0.3s;
 }
 
 .login-btn:hover {
-    background: #2980b9;
+    background: var(--secondary-color);
 }
 
 [data-theme="dark"] .nav-links a {

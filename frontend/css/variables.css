@@ -1,13 +1,13 @@
 :root {
-    --primary-color: #4CAF50; /* Zielony */
-    --secondary-color: #FF9800; /* Pomarańczowy */
-    --background-color: #f4f4f4; /* Jasnoszary */
-    --text-color: #333; /* Ciemnoszary */
-    --card-background: #fff; /* Białe tło kart */
-    --header-background: #fff; /* Białe tło nagłówka */
-    --border-radius: 10px; /* Zaokrąlenie */
-    --transition-speed: 0.3s; /* Czas przejścia */
-    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Cień */
+    --primary-color: #ff5722; /* Pomarańczowy */
+    --secondary-color: #4CAF50; /* Zielony */
+    --background-color: #121212; /* Ciemne tło */
+    --light-background: #ffffff; /* Jasne tło */
+    --text-color: #ffffff; /* Kolor tekstu */
+    --hover-background: rgba(255, 255, 255, 0.1); /* Tło przy najechaniu */
+    --card-background: #1e1e1e; /* Tło kart */
+    --border-radius: 10px; /* Zaokrąglenie */
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Cień */
 }
 
 [data-theme="dark"] {
