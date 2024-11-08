@@ -21,26 +21,37 @@
     --feature-background: #2c2c2c;
     --testimonial-background: #2c2c2c;
 }
+/* Tło dla całego body */
+[data-theme="dark"] body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Nagłówek */
 [data-theme="dark"] header {
-    background-color: #1e1e1e; /* Ciemniejsze tło dla nagłówka */
+    background-color: var(--header-background);
 }
 
-[data-theme="dark"] .feature-card,
+/* Karty funkcji i opinii */
+[data-theme="dark"] .feature-card
 [data-theme="dark"] .testimonial-card {
-    background-color: #2a2a2a; /* Ciemne tło dla kart */
-    color: #ffffff; /* Jasny tekst w kartach */
+    background-color: var(--card-background);
+    color: var(--text-color);
 }
 
-[data-theme="dark"] input,
-[data-theme="dark"] textarea {
+/* Tła dla formularzy */
+[data-theme="dark"] .contact input,
+[data-theme="dark"] .contact textarea {
     background-color: #333; /* Ciemne tło dla formularzy */
     color: #ffffff; /* Jasny tekst w formularzach */
 }
-[data-theme="dark"] .how-it-works {
-    background: #2c2c2c; /* Ciemne tło dla sekcji jak to działa */
-}
+
+/* Tło dla sekcji */
+[data-theme="dark"] .features,
+[data-theme="dark"] .how-it-works,
+[data-theme="dark"] .testimonials,
 [data-theme="dark"] .contact {
-    background: #2c2c2c; /* Ciemne tło dla sekcji kontakt */
+    background: var(--feature-background); /* Użycie zmiennej dla tła */
 }
 
 /* Style dla przycisku przełączania motywu */
