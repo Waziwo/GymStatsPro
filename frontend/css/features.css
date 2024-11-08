@@ -19,13 +19,14 @@
     background: var(--card-background);
     border-radius: var(--border-radius);
     padding: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--box-shadow); /* Dodanie cienia */
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
     text-align: center;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Zwiększony cień przy hover */
 }
 
 .feature-card h3 {

@@ -1,3 +1,11 @@
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--card-background);
+    padding: 2rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow); /* Dodanie cienia */
+}
 .contact {
     padding: 6rem 2rem;
 }
@@ -39,12 +47,13 @@ form button {
     border: none;
     border-radius: var(--border-radius);
     cursor: pointer;
-    transition: background var(--transition-speed);
+    transition: background var(--transition-speed), transform var(--transition-speed);
     width: 100%;
 }
 
 form button:hover {
     background: #2980b9;
+    transform: translateY(-2px); /* Efekt unoszenia przy hover */
 }
 
 [data-theme="dark"] form {

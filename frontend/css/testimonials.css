@@ -21,13 +21,12 @@
     background: var(--card-background);
     border-radius: var(--border-radius);
     padding: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    position: relative;
+    box-shadow: var(--box-shadow); /* Dodanie cienia */
     transition: transform var(--transition-speed);
 }
 
 .testimonial-card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.02); /* Powiększenie przy hover */
 }
 
 .testimonial-card p {

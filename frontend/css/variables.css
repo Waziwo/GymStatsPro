@@ -5,8 +5,9 @@
     --text-color: #333; /* Ciemnoszary */
     --card-background: #fff; /* Białe tło kart */
     --header-background: #fff; /* Białe tło nagłówka */
-    --border-radius: 8px; /* Zaokrąglenie */
+    --border-radius: 10px; /* Zaokrąlenie */
     --transition-speed: 0.3s; /* Czas przejścia */
+    --box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Cień */
 }
 
 [data-theme="dark"] {
@@ -16,4 +17,9 @@
     --text-color: #ecf0f1; /* Jasnoszary */
     --card-background: #34495e; /* Ciemny kolor kart */
     --header-background: rgba(22, 30, 40, 0.95); /* Ciemne tło nagłówka */
+}
+
+/* Dodaj do dowolnego pliku CSS, np. reset.css lub variables.css */
+body.transition {
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
