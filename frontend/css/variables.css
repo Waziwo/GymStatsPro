@@ -1,23 +1,19 @@
-/* variables.css */
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --background-color: #fff;
-    --text-color: #333;
-    --card-background: #fff;
-    --header-background: rgba(44, 62, 80, 0.95);
-    --feature-background: #f8f9fa;
-    --testimonial-background: #f8f9fa;
-    --border-radius: 10px; /* Zaokrąglenie */
+    --primary-color: #4CAF50; /* Zielony */
+    --secondary-color: #FF9800; /* Pomarańczowy */
+    --background-color: #f4f4f4; /* Jasnoszary */
+    --text-color: #333; /* Ciemnoszary */
+    --card-background: #fff; /* Białe tło kart */
+    --header-background: #fff; /* Białe tło nagłówka */
+    --border-radius: 8px; /* Zaokrąglenie */
     --transition-speed: 0.3s; /* Czas przejścia */
 }
 
 [data-theme="dark"] {
-    --primary-color: #2980b9;
-    --background-color: #1a1a1a;
-    --text-color: #fff;
-    --card-background: #2c2c2c;
-    --header-background: rgba(22, 30, 40, 0.95);
-    --feature-background: #2c2c2c;
-    --testimonial-background: #2c2c2c;
+    --primary-color: #1abc9c; /* Zielony w ciemnym trybie */
+    --secondary-color: #e67e22; /* Pomarańczowy w ciemnym trybie */
+    --background-color: #2c3e50; /* Ciemny szary */
+    --text-color: #ecf0f1; /* Jasnoszary */
+    --card-background: #34495e; /* Ciemny kolor kart */
+    --header-background: rgba(22, 30, 40, 0.95); /* Ciemne tło nagłówka */
 }

@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Sprawdzenie preferencji systemu
     function checkSystemTheme() {
         // Sprawdź preferencje systemowe
-        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark');
         
         // Sprawdź czy jest już zapisany motyw w localStorage
         const savedTheme = localStorage.getItem('theme');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Nasłuchiwanie zmian w preferencjach systemowych
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(checkSystemTheme);
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', checkSystemTheme);
 
     // Obsługa kliknięcia przycisku zmiany motywu
     themeToggle.addEventListener('click', () => {

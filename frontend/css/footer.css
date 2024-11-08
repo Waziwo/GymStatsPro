@@ -1,7 +1,6 @@
-/* footer.css */
 footer {
     background: var(--header-background);
-    color: #fff;
+    color: var(--text-color);
     text-align: center;
     padding: 1rem 0;
     position: relative;
@@ -12,4 +11,9 @@ footer {
 footer p {
     margin: 0;
     font-size: 0.9rem;
+}
+
+[data-theme="dark"] footer {
+    background: var(--card-background);
+    color: var(--text-color);
 }

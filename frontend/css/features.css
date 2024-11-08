@@ -1,7 +1,6 @@
-/* features.css */
 .features {
     padding: 6rem 2rem;
-    background: var(--feature-background);
+    background: var(--background-color);
 }
 
 .features h2 {
@@ -12,10 +11,8 @@
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
 }
 
 .feature-card {
@@ -29,7 +26,6 @@
 
 .feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .feature-card h3 {
@@ -38,5 +34,14 @@
 }
 
 .feature-card p {
-    color: #555;
+    color: var(--text-color);
+}
+
+[data-theme="dark"] .features {
+    background: var(--background-color);
+}
+
+[data-theme="dark"] .feature-card {
+    background: var(--card-background);
+    color: var(--text-color);
 }

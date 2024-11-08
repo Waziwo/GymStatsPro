@@ -1,13 +1,10 @@
-/* hero.css */
 .hero {
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/gym-background.jpg');
     background-size: cover;
-    background-attachment: fixed; /* Efekt parallax */
     background-position: center;
     color: #fff;
     text-align: center;
     padding: 12rem 2rem 8rem;
-    margin-top: -80px;
 }
 
 .hero h1 {
@@ -21,4 +18,9 @@
     font-size: 1.2rem;
     margin-bottom: 2rem;
     opacity: 0.9;
+}
+
+[data-theme="dark"] .hero {
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('../images/gym-background.jpg');
+    color: var(--text-color);
 }

@@ -1,4 +1,3 @@
-/* contact.css */
 .contact {
     padding: 6rem 2rem;
 }
@@ -46,4 +45,19 @@ form button {
 
 form button:hover {
     background: #2980b9;
+}
+
+[data-theme="dark"] form {
+    background: var(--card-background);
+}
+
+[data-theme="dark"] form input,
+[data-theme="dark"] form textarea {
+    border: 1px solid #555;
+    background: #444;
+    color: var(--text-color);
+}
+
+[data-theme="dark"] form button {
+    background: var(--primary-color);
 }
