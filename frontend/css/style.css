@@ -21,107 +21,6 @@
     --feature-background: #2c2c2c;
     --testimonial-background: #2c2c2c;
 }
-/* Tło dla całego body */
-[data-theme="dark"] body {
-    background-color: var(--dark-background);
-    color: var(--dark-text);
-}
-
-/* Nagłówek */
-[data-theme="dark"] header {
-    background-color: rgba(22, 22, 22, 0.95);
-    color: var(--dark-text);
-}
-
-/* Karty funkcji i opinii */
-[data-theme="dark"] .feature-card,
-[data-theme="dark"] .testimonial-card {
-    background-color: var(--card-background-dark);
-    color: var(--dark-text);
-    border: 1px solid rgba(255, 255, 255, 0.1); /* Delikatna ramka */
-}
-
-/* Tła dla formularzy */
-[data-theme="dark"] .contact input,
-[data-theme="dark"] .contact textarea {
-    background-color: #333; /* Ciemne tło dla formularzy */
-    color: var(--dark-text); /* Jasny tekst w formularzach */
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* Przyciski */
-[data-theme="dark"] button {
-    background-color: #444; /* Ciemne tło dla przycisków */
-    color: var(--dark-text); /* Jasny tekst */
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-[data-theme="dark"] button:hover {
-    background-color: #555; /* Jaśniejsze tło przy hoverze */
-}
-
-/* Ustawienia dla sekcji */
-[data-theme="dark"] .features,
-[data-theme="dark"] .how-it-works,
-[data-theme="dark"] .testimonials,
-[data-theme="dark"] .contact {
-    background: var(--dark-background);
-    padding: 20px;
-}
-/* Style dla przycisku przełączania motywu */
-.theme-toggle {
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
-    font-size: 1.2rem;
-    padding: 0.5rem;
-    transition: color 0.3s ease;
-}
-
-.theme-toggle:hover {
-    color: var(--primary-color);
-}
-
-/* Zaktualizowane style z użyciem zmiennych */
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
-}
-
-header {
-    background: var(--header-background);
-}
-
-.feature-card {
-    background: var(--card-background);
-    color: var(--text-color);
-}
-
-.testimonial-card {
-    background: var(--testimonial-background);
-    color: var(--text-color);
-}
-
-.features {
-    background: var(--feature-background);
-}
-
-.contact input,
-.contact textarea {
-    background: var(--card-background);
-    color: var(--text-color);
-    border: 1px solid var(--text-color);
-}
-
-/* Dodaj transition dla płynnej zmiany motywu */
-* {
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
 
 /* Reset i podstawowe style */
 * {
@@ -133,7 +32,8 @@ header {
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    color: #333;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
 .landing-page {
@@ -142,9 +42,9 @@ body {
     flex-direction: column;
 }
 
-/* Header i nawigacja */
+/* Nagłówek */
 header {
-    background: rgba(44, 62, 80, 0.95);
+    background: var(--header-background);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -172,7 +72,7 @@ nav {
 .logo i {
     font-size: 2rem;
     margin-right: 1rem;
-    color: #3498db;
+    color: var(--primary-color);
 }
 
 .nav-links {
@@ -189,11 +89,11 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #3498db;
+    color: var(--primary-color);
 }
 
 .login-btn {
-    background: #3498db;
+    background: var(--primary-color);
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
     transition: background 0.3s ease;
@@ -248,7 +148,7 @@ nav {
 }
 
 .cta-button.primary {
-    background: #3498db;
+    background: var(--primary-color);
     color: #fff;
 }
 
@@ -260,58 +160,20 @@ nav {
 
 .cta-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px rgba(0,0, 0, 0.2);
 }
 
-.hero-stats {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    margin-top: 4rem;
-}
-
-.stat-item {
-    text-align: center;
-}
-
-.stat-number {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #3498db;
-    display: block;
-}
-
-.stat-label {
-    font-size: 1rem;
-    opacity: 0.9;
-}
-
-/* Features section */
+/* Sekcja funkcji */
 .features {
-    padding: 6rem 2rem;
-    background: #f8f9fa;
-}
-
-.features h2 {
+    padding: 5rem 2rem;
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-}
-
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .feature-card {
-    background: #fff;
-    padding: 2rem;
+    background: var(--card-background);
     border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
 }
 
@@ -319,162 +181,51 @@ nav {
     transform: translateY(-5px);
 }
 
-.feature-card i {
-    font-size: 2.5rem;
-    color: #3498db;
-    margin-bottom: 1.5rem;
-}
-
-.feature-card h3 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-}
-
-/* How it works section */
+/* Sekcja jak to działa */
 .how-it-works {
-    padding: 6rem 2rem;
-    background: #fff;
+    padding: 5rem 2rem;
+    background: var(--feature-background);
 }
 
-.steps {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.step {
-    text-align: center;
-    flex: 1;
-    max-width: 300px;
-}
-
-.step-number {
-    width: 60px;
-    height: 60px;
-    background: #3498db;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    margin: 0 auto 1.5rem;
-}
-
-/* Pricing section */
+/* Sekcja cenników */
 .pricing {
-    padding: 6rem 2rem;
-    background: #f8f9fa;
+    padding: 5rem 2rem;
+    text-align: center;
 }
 
 .pricing-grid {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
-.pricing-card {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    flex: 1;
-    max-width: 350px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    position: relative;
-}
-
-.pricing-card.popular {
-    transform: scale(1.05);
-    border: 2px solid #3498db;
-}
-
-.popular-badge {
-    position: absolute;
-    top: -15px;
-    right: 20px;
-    background: #3498db;
-    color: #fff;
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
-    font-size: 0.9rem;
-}
-
-.price {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin: 1.5rem 0;
-    color: #3498db;
-}
-
-/* Testimonials section */
+/* Sekcja opinii */
 .testimonials {
-    padding: 6rem 2rem;
-    background: #fff;
+    padding: 5rem 2rem;
+    background: var(--testimonial-background);
 }
 
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.testimonial-card {
-    background: #f8f9fa;
-    padding: 2rem;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.testimonial-card p {
-    font-style: italic;
-    margin-bottom: 1rem;
-}
-
-.testimonial-card h4 {
-    color: #3498db;
-    font-weight: 500;
-}
-
-/* Contact section */
+/* Sekcja kontaktowa */
 .contact {
-    padding: 6rem 2rem;
-    background: #f8f9fa;
-}
-
-.contact form {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    padding: 5rem 2rem;
+    text-align: center;
 }
 
 .contact input,
 .contact textarea {
+    width: 100%;
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact textarea {
-    min-height: 150px;
+    margin-bottom: 1rem;
 }
 
 .contact button {
-    background: #3498db;
+    background: var(--primary-color);
     color: #fff;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
     cursor: pointer;
     transition: background 0.3s ease;
 }
@@ -504,7 +255,7 @@ footer {
 }
 
 .social-links a:hover {
-    color: #3498db;
+    color: var(--primary-color);
 }
 
 /* Responsywność */
@@ -532,10 +283,6 @@ footer {
         align-items: center;
     }
 
-    .pricing-card.popular {
-        transform: none;
-    }
-
     nav {
         flex-direction: column;
     }
@@ -561,4 +308,48 @@ footer {
 
 .hero, .features, .how-it-works, .pricing, .testimonials, .contact {
     animation: fadeIn 1s ease-out;
+}
+
+/* Dodatkowe style dla trybu ciemnego */
+[data-theme="dark"] body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Nagłówek w trybie ciemnym */
+[data-theme="dark"] header {
+    background-color: var(--header-background);
+}
+
+/* Karty funkcji i opinii w trybie ciemnym */
+[data-theme="dark"] .feature-card,
+[data-theme="dark"] .testimonial-card {
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+/* Tła dla sekcji w trybie ciemnym */
+[data-theme="dark"] .features,
+[data-theme="dark"] .how-it-works,
+[data-theme="dark"] .testimonials,
+[data-theme="dark"] .contact {
+    background: var(--feature-background);
+}
+
+/* Tła dla formularzy w trybie ciemnym */
+[data-theme="dark"] .contact input,
+[data-theme="dark"] .contact textarea {
+    background-color: #444; /* Ciemniejsze tło dla formularzy */
+    color: #ffffff; /* Jasny tekst w formularzach */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Przyciski w trybie ciemnym */
+[data-theme="dark"] button {
+    background: #444; /* Ciemniejsze tło dla przycisków */
+    color : #ffffff /* Jasny tekst */
+}
+
+[data-theme="dark"] button:hover {
+    background: #555; /* Jaśniejsze tło przy hoverze */
 }
