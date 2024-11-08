@@ -1,0 +1,12 @@
+.features {
+    padding: 6rem 2rem;
+    background: var(--feature-background);
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+/* Dalsze style sekcji funkcji */

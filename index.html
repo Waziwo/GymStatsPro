@@ -4,31 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GymStats Pro - Twój Darmowy Osobisty Trener</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/testimonials.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="frontend/css/style.css">
 </head>
 <body>
     <div class="landing-page">
         <header>
             <nav>
-                <nav>
-                    <div class="logo">
-                        <i class="fas fa-dumbbell"></i>
-                        <span>GymStats Pro</span>
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#features">Funkcje</a></li>
-                        <li><a href="#testimonials">Opinie</a></li>
-                        <li><a href="#contact">Kontakt</a></li>
-                        <li><a href="dashboard.html" class="login-btn">Zaloguj się</a></li>
-                        <li>
-                            <button id="theme-toggle" class="theme-toggle">
-                                <i class="fas fa-moon"></i>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="logo">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>GymStats Pro</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#features">Funkcje</a></li>
+                    <li><a href="#testimonials">Opinie</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                    <li><a href="dashboard.html" class="login-btn">Zaloguj się</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
         </header>
 
         <section id="home" class="hero">
@@ -86,61 +94,45 @@
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-gift"></i>
-                    <h3>Zawsze Za Darmo</h3>
-                    <p>Wszystkie funkcje dostępne bez żadnych opłat</p>
+                    <h3>Bezpłatne Funkcje</h3>
+                    <p>Wszystkie funkcje dostępne bez opłat, bez ukrytych kosztów</p>
                 </div>
             </div>
         </section>
 
-        <section id="how-it-works" class="how-it-works">
-            <h2>Jak to działa?</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Załóż darmowe konto</h3>
-                    <p>Szybka i prosta rejestracja w kilka sekund</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Dodaj treningi</h3>
-                    <p>Zapisuj swoje ćwiczenia i postępy</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Analizuj wyniki</h3>
-                    <p>Śledź swój postęp i osiągaj cele</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonials" class="testimonials ">
-            <h2>Opinie naszych użytkowników</h2>
+        <section id="testimonials" class="testimonials">
+            <h2>Opinie Użytkowników</h2>
             <div class="testimonial-grid">
                 <div class="testimonial-card">
-                    <p>"GymStats Pro zmieniło moje podejście do treningów! Świetne narzędzie do monitorowania postępów, i to całkowicie za darmo!"</p>
-                    <h4>- Anna K.</h4>
+                    <p>"GymStats Pro zmienił moje podejście do treningów! Świetne narzędzie do monitorowania postępów!"</p>
+                    <span>- Anna K.</span>
                 </div>
                 <div class="testimonial-card">
-                    <p>"Dzięki tej aplikacji mogę łatwo śledzić swoje postępy i motywować się do dalszej pracy!"</p>
-                    <h4>- Marek P.</h4>
+                    <p>"Dzięki tej aplikacji mogę łatwo śledzić swoje cele i osiągnięcia. Polecam każdemu!"</p>
+                    <span>- Marek P.</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Prosta w obsłudze i bardzo pomocna. Zdecydowanie najlepsza aplikacja do fitnessu!"</p>
+                    <span>- Kasia W.</span>
                 </div>
             </div>
         </section>
 
         <section id="contact" class="contact">
             <h2>Skontaktuj się z nami</h2>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Twoje imię" required>
-                <input type="email" name="email" placeholder="Twój e-mail" required>
-                <textarea name="message" placeholder="Twoja wiadomość" required></textarea>
-                <button type="submit" class="cta-button primary">Wyślij</button>
+            <form>
+                <input type="text" placeholder="Imię" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Wiadomość" required></textarea>
+                <button type="submit">Wyślij</button>
             </form>
         </section>
 
         <footer>
-            <p>&copy; 2023 GymStats Pro. Wszystkie prawa zastrzeżone.</p>
+            <p>&copy; 2023 GymStats Pro. Wszelkie prawa zastrzeżone.</p>
         </footer>
     </div>
-    <script src="frontend/js/theme.js"></script>
+
+    <script src="frontend/js/script.js"></script>
 </body>
 </html>
