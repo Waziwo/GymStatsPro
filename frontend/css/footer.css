@@ -2,17 +2,17 @@ footer {
     background: var(--header-background);
     color: var(--text-color);
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
     position: relative;
     bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Dodanie cienia u góry stopki */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
     margin: 0;
     font-size: 0.9rem;
-    opacity: 0.8; /* Lekka przezroczystość tekstu */
+    opacity: 0.8;
 }
 
 [data-theme="dark"] footer {

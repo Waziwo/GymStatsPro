@@ -1,12 +1,15 @@
 .testimonials {
     padding: 6rem 2rem;
     background: var(--testimonial-background);
+    position: relative; /* Aby dodać efekt parallax */
 }
 
 .testimonials h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
+    color: var(--primary-color);
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .testimonial-grid {
@@ -21,17 +24,20 @@
     background: var(--card-background);
     border-radius: var(--border-radius);
     padding: 2rem;
-    box-shadow: var(--box-shadow); /* Dodanie cienia */
+    box-shadow: var(--box-shadow);
     transition: transform var(--transition-speed);
+    position: relative;
 }
 
 .testimonial-card:hover {
-    transform: scale(1.02); /* Powiększenie przy hover */
+    transform: scale(1.05); /* Powiększenie przy hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Zwiększony cień przy hover */
 }
 
 .testimonial-card p {
     font-style: italic;
     margin-bottom: 1rem;
+    color: var(--text-color);
 }
 
 .testimonial-card span {

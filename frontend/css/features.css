@@ -11,24 +11,42 @@
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+    animation: fadeIn 0.5s ease-in-out; /* Dodanie animacji */
 }
 
 .feature-card {
     background: var(--card-background);
     border-radius: var(--border-radius);
     padding: 2rem;
-    box-shadow: var(--box-shadow); /* Dodanie cienia */
+    box-shadow: var(--box-shadow);
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
-    text-align: center;
+    position: relative; /* Aby dodać efekt parallax */
+    overflow: hidden; /* Ukrycie nadmiarowych elementów */
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Zwiększony cień przy hover */
+    transform: translateY(-10px) scale(1.05); /* Zwiększenie efektu unoszenia */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1); /* Lekka przezroczystość */
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+
+.feature-card:hover::before {
+    opacity: 1; /* Efekt na hover */
+}
 .feature-card h3 {
     margin: 1rem 0;
     font-size: 1.5rem;
