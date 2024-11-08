@@ -23,37 +23,53 @@
 }
 /* Tło dla całego body */
 [data-theme="dark"] body {
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--dark-background);
+    color: var(--dark-text);
 }
 
 /* Nagłówek */
 [data-theme="dark"] header {
-    background-color: var(--header-background);
+    background-color: rgba(22, 22, 22, 0.95);
+    color: var(--dark-text);
 }
 
 /* Karty funkcji i opinii */
-[data-theme="dark"] .feature-card
+[data-theme="dark"] .feature-card,
 [data-theme="dark"] .testimonial-card {
-    background-color: var(--card-background);
-    color: var(--text-color);
+    background-color: var(--card-background-dark);
+    color: var(--dark-text);
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Delikatna ramka */
 }
 
 /* Tła dla formularzy */
 [data-theme="dark"] .contact input,
 [data-theme="dark"] .contact textarea {
     background-color: #333; /* Ciemne tło dla formularzy */
-    color: #ffffff; /* Jasny tekst w formularzach */
+    color: var(--dark-text); /* Jasny tekst w formularzach */
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Tło dla sekcji */
+/* Przyciski */
+[data-theme="dark"] button {
+    background-color: #444; /* Ciemne tło dla przycisków */
+    color: var(--dark-text); /* Jasny tekst */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+[data-theme="dark"] button:hover {
+    background-color: #555; /* Jaśniejsze tło przy hoverze */
+}
+
+/* Ustawienia dla sekcji */
 [data-theme="dark"] .features,
 [data-theme="dark"] .how-it-works,
 [data-theme="dark"] .testimonials,
 [data-theme="dark"] .contact {
-    background: var(--feature-background); /* Użycie zmiennej dla tła */
+    background: var(--dark-background);
+    padding: 20px;
 }
-
 /* Style dla przycisku przełączania motywu */
 .theme-toggle {
     background: none;
