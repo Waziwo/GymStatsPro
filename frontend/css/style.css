@@ -36,6 +36,12 @@
     background-color: #333; /* Ciemne tło dla formularzy */
     color: #ffffff; /* Jasny tekst w formularzach */
 }
+[data-theme="dark"] .how-it-works {
+    background: #2c2c2c; /* Ciemne tło dla sekcji jak to działa */
+}
+[data-theme="dark"] .contact {
+    background: #2c2c2c; /* Ciemne tło dla sekcji kontakt */
+}
 
 /* Style dla przycisku przełączania motywu */
 .theme-toggle {
