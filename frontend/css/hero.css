@@ -1,10 +1,11 @@
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/gym-background.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/gym-background.jpg') no-repeat center center/cover;
+    height: 100vh; /* Ustawia wysokość na 100% widoku */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 100px 20px; /* Zwiększenie paddingu */
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    position: relative;
+    color: #fff;
 }
 
 .hero h1 {
@@ -19,7 +20,29 @@
     opacity: 0.9;
 }
 
-[data-theme="dark"] .hero {
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url('../images/gym-background.jpg');
-    color: var(--text-color);
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.cta-button.primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.cta-button.secondary {
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.cta-button:hover {
+    background: var(--secondary-color);
 }

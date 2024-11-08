@@ -22,14 +22,15 @@
     border-radius: var(--border-radius);
     padding: 2rem;
     box-shadow: var(--box-shadow);
-    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
     position: relative; /* Aby dodać efekt parallax */
     overflow: hidden; /* Ukrycie nadmiarowych elementów */
 }
 
 .feature-card:hover {
-    transform: translateY(-10px) scale(1.05); /* Zwiększenie efektu unoszenia */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .feature-card::before {
@@ -44,9 +45,16 @@
     opacity: 0;
 }
 
+.feature-card i {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
 .feature-card:hover::before {
     opacity: 1; /* Efekt na hover */
 }
+
 .feature-card h3 {
     margin: 1rem 0;
     font-size: 1.5rem;

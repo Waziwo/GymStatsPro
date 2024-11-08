@@ -1,6 +1,6 @@
 .testimonials {
     padding: 6rem 2rem;
-    background: var(--testimonial-background);
+    background: var(--light-background);
     position: relative; /* Aby dodać efekt parallax */
 }
 

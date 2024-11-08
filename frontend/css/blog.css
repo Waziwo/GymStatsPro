@@ -14,9 +14,31 @@
     border-radius: var(--border-radius);
     padding: 20px;
     box-shadow: var(--box-shadow);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .blog-card:hover {
-    transform: translateY(- 5px);
+    transform: translateY(-5px); /* Efekt unoszenia przy hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Zwiększony cień przy hover */
+}
+
+.blog-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.blog-card p {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+}
+
+.read-more {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.read-more:hover {
+    color: var(--secondary-color);
 }

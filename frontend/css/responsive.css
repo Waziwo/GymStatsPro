@@ -23,6 +23,10 @@
         grid-template-columns: 1fr; /* Jedna kolumna na mniejszych ekranach */
     }
 
+    .blog-grid {
+        grid-template-columns: 1fr; /* Jedna kolumna na mniejszych ekranach */
+    }
+
     .testimonial-grid {
         grid-template-columns: 1fr; /* Jedna kolumna na mniejszych ekranach */
     }
@@ -45,8 +49,9 @@
         font-size: 1.3rem; /* Dostosowanie rozmiaru nagłówka w kartach funkcji */
     }
 
-    .testimonial-card p {
-        font-size: 0.9rem; /* Dostosowanie rozmiaru tekstu w opiniach */
+    .testimonial-card p,
+    .blog-card p {
+        font-size: 0.9rem; /* Dostosowanie rozmiaru tekstu w opiniach i blogu */
     }
 
     form input,

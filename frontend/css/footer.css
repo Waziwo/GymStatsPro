@@ -15,6 +15,22 @@ footer p {
     opacity: 0.8;
 }
 
+.social-icons {
+    margin-top: 1rem;
+}
+
+.social-button {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-button:hover {
+    color: var(--secondary-color);
+}
+
 [data-theme="dark"] footer {
     background: var(--card-background);
     color: var(--text-color);
