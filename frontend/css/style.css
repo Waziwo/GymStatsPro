@@ -14,12 +14,27 @@
 /* Zmienne dla motywu ciemnego */
 [data-theme="dark"] {
     --primary-color: #2980b9;
-    --background-color: #1a1a1a;
-    --text-color: #fff;
-    --card-background: #2c2c2c;
+    --background-color: #1a1a1a; /* Tło ciemne */
+    --text-color: #fff; /* Tekst jasny */
+    --card-background: #2c2c2c; /* Tło kart ciemne */
     --header-background: rgba(22, 30, 40, 0.95);
     --feature-background: #2c2c2c;
     --testimonial-background: #2c2c2c;
+}
+[data-theme="dark"] header {
+    background-color: #1e1e1e; /* Ciemniejsze tło dla nagłówka */
+}
+
+[data-theme="dark"] .feature-card,
+[data-theme="dark"] .testimonial-card {
+    background-color: #2a2a2a; /* Ciemne tło dla kart */
+    color: #ffffff; /* Jasny tekst w kartach */
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] textarea {
+    background-color: #333; /* Ciemne tło dla formularzy */
+    color: #ffffff; /* Jasny tekst w formularzach */
 }
 
 /* Style dla przycisku przełączania motywu */
