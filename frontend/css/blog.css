@@ -1,6 +1,6 @@
 .blog {
     padding: 6rem 2rem;
-    background: var(--background-color);
+    background: #f4f4f4; /* Jaśniejsze tło */
 }
 
 .blog-grid {
@@ -10,35 +10,36 @@
 }
 
 .blog-card {
-    background: var(--card-background);
-    border-radius: var(--border-radius);
+    background: white; /* Białe tło dla kart bloga */
+    border-radius: 10px; /* Nowoczesne zaokrąglenie */
     padding: 20px;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .blog-card:hover {
-    transform: translateY(-5px); /* Efekt unoszenia przy hover */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Zwiększony cień przy hover */
+    transform: translateY(-5px); /* Lekki efekt unoszenia */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .blog-card h3 {
     margin: 0.5rem 0;
     font-size: 1.5rem;
+    color: #333; /* Ciemniejszy kolor tekstu */
 }
 
 .blog-card p {
     margin-bottom: 1rem;
-    color: var(--text-color);
+    color: #666; /* Ciemniejszy kolor tekstu */
 }
 
 .read-more {
     text-decoration: none;
-    color: var(--primary-color);
+    color: #ff5722; /* Kolor linku "Czytaj więcej" */
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .read-more:hover {
-    color: var(--secondary-color);
+    color: #e64a19; /* Ciemniejszy kolor przy najechaniu */
 }

@@ -2,12 +2,15 @@
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
-        text-align: center;
     }
 
     .hero p {
         font-size: 1rem;
         text-align: center;
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* Ułożenie przycisków w kolumnie */
     }
 
     .nav-links {

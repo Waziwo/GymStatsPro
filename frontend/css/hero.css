@@ -1,11 +1,12 @@
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../images/gym-background.jpg') no-repeat center center/cover;
-    height: 100vh; /* Ustawia wysokość na 100% widoku */
+    height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color: #fff;
+    padding: 0 20px; /* Dodatkowe odstępy */
 }
 
 .hero h1 {
@@ -23,26 +24,28 @@
 .hero-buttons {
     display: flex;
     gap: 20px;
+    flex-direction: column; /* Zmiana na kolumnę dla lepszej responsywności */
 }
 
 .cta-button {
     padding: 15px 30px;
-    border-radius: var(--border-radius);
+    border-radius: 5px; /* Zmiana na bardziej nowoczesne zaokrąglenie */
     text-decoration: none;
-    transition: background 0.3s;
+    transition: background 0.3s, transform 0.3s; /* Dodanie transformacji */
 }
 
 .cta-button.primary {
-    background: var(--primary-color);
+    background: #ff5722; /* Nowoczesny kolor */
     color: white;
 }
 
 .cta-button.secondary {
     background: transparent;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
+    border: 2px solid #ff5722; /* Dopasowanie koloru */
+    color: #ff5722;
 }
 
 .cta-button:hover {
-    background: var(--secondary-color);
+    background: #e64a19;
+    transform: translateY(-2px); /* Lekki efekt uniesienia */
 }

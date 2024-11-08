@@ -1,5 +1,5 @@
 header {
-    background-color: var(--header-background);
+    background-color: #333; /* Ciemne tło nagłówka */
     box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
     padding: 1rem 2rem;
 }
@@ -13,20 +13,20 @@ nav {
 }
 
 .nav-links a {
-    color: var(--text-color);
+    color: #fff; /* Jasny kolor tekstu */
     font-weight: 700;
     margin: 0 1rem;
-    transition: color var(--transition-speed);
+    transition: color 0.3s;
 }
 
 .nav-links a:hover {
-    color: var(--primary-color);
+    color: #ff5722; /* Kolor przy najechaniu */
 }
 
 .login-btn {
-    background: var(--primary-color);
+    background: #ff5722; /* Kolor przycisku logowania */
     padding: 10px 20px;
-    border-radius: var(--border-radius);
+    border-radius: 5px; /* Nowoczesne zaokrąglenie */
     border: none;
     color: white;
     cursor: pointer;
@@ -34,13 +34,12 @@ nav {
 }
 
 .login-btn:hover {
-    background: var(--secondary-color);
+    background: #e64a19; /* Ciemniejszy kolor przy najechaniu */
 }
-
 [data-theme="dark"] .nav-links a {
-    color: var(--text-color);
+    color: #fff; /* Jasny kolor tekstu w trybie ciemnym */
 }
 
 [data-theme="dark"] .login-btn {
-    background: var(--primary-color);
+    background: #ff5722; /* Kolor przycisku logowania w trybie ciemnym */
 }

@@ -1,6 +1,6 @@
 footer {
-    background: var(--header-background);
-    color: var(--text-color);
+    background: #333; /* Ciemne tło stopki */
+    color: #fff; /* Jasny tekst */
     text-align: center;
     padding: 2rem 0;
     position: relative;
@@ -22,16 +22,16 @@ footer p {
 .social-button {
     margin: 0 10px;
     text-decoration: none;
-    color: var(--primary-color);
+    color: #ff5722; /* Kolor przycisków społecznościowych */
     font-size: 1.5rem;
     transition: color 0.3s;
 }
 
 .social-button:hover {
-    color: var(--secondary-color);
+    color: #e64a19; /* Ciemniejszy kolor przy najechaniu */
 }
 
 [data-theme="dark"] footer {
-    background: var(--card-background);
-    color: var(--text-color);
+    background: #444; /* Ciemniejsze tło w trybie ciemnym */
+    color: #fff; /* Jasny tekst w trybie ciemnym */
 }

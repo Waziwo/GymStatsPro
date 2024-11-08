@@ -1,15 +1,14 @@
 .testimonials {
     padding: 6rem 2rem;
-    background: var(--light-background);
-    position: relative; /* Aby dodać efekt parallax */
+    background: #f9f9f9; /* Jaśniejsze tło */
+    position: relative;
 }
 
 .testimonials h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 3rem;
-    color: var(--primary-color);
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    color: #333; /* Ciemniejszy tekst */
 }
 
 .testimonial-grid {
@@ -21,32 +20,28 @@
 }
 
 .testimonial-card {
-    background: var(--card-background);
-    border-radius: var(--border-radius);
+    background: white;
+    border-radius: 10px; /* Nowoczesne zaokrąglenie */
     padding: 2rem;
-    box-shadow: var(--box-shadow);
-    transition: transform var(--transition-speed);
-    position: relative;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
-
 .testimonial-card:hover {
     transform: scale(1.05); /* Powiększenie przy hover */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Zwiększony cień przy hover */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 .testimonial-card p {
     font-style: italic;
     margin-bottom: 1rem;
-    color: var(--text-color);
+    color: #666; /* Ciemniejszy kolor tekstu */
 }
-
 .testimonial-card span {
     display: block;
     text-align: right;
     font-weight: bold;
-    color: var(--primary-color);
+    color: #ff5722; /* Kolor autora opinii */
 }
-
 [data-theme="dark"] .testimonials {
     background: var(--background-color);
 }

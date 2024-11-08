@@ -1,8 +1,7 @@
 .features {
     padding: 6rem 2rem;
-    background: var(--background-color);
+    background: #f4f4f4; /* Jasne tło */
 }
-
 .features h2 {
     text-align: center;
     font-size: 2.5rem;
@@ -14,23 +13,20 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 40px 20px;
-    animation: fadeIn 0.5s ease-in-out; /* Dodanie animacji */
+    animation: fadeIn 0.5s ease-in-out;
 }
 
 .feature-card {
-    background: var(--card-background);
-    border-radius: var(--border-radius);
+    background: white;
+    border-radius: 10px; /* Zmiana na bardziej nowoczesne zaokrąglenie */
     padding: 2rem;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    position: relative; /* Aby dodać efekt parallax */
-    overflow: hidden; /* Ukrycie nadmiarowych elementów */
 }
-
 .feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .feature-card::before {
@@ -47,7 +43,7 @@
 
 .feature-card i {
     font-size: 3rem;
-    color: var(--primary-color);
+    color: #ff5722; /* Kolor ikon */
     margin-bottom: 1rem;
 }
 
@@ -61,9 +57,8 @@
 }
 
 .feature-card p {
-    color: var(--text-color);
+    color: #333; /* Ciemniejszy tekst */
 }
-
 [data-theme="dark"] .features {
     background: var(--background-color);
 }
